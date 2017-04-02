@@ -14,7 +14,7 @@
 	wp_enqueue_style('bootstrapcssmin','https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', array(), '3.3.7.', 'all');
     wp_enqueue_style('fontawesome','https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', array(), '4.6.3.', 'all');
     wp_enqueue_style('material-icons','https://fonts.googleapis.com/icon?family=Material+Icons', array(), '', 'all');
-    wp_enqueue_style('customstyle',get_template_directory_uri().'css/smartpress.css' , array(), '1.0.0.', 'all');
+    wp_enqueue_style('customstyle',get_template_directory_uri().'/css/smartpress.css' , array(), '1.0.0.', 'all');
     
 	/*
 	 * Init Scripts » ORDER MATTERS AF
