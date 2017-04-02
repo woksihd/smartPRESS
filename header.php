@@ -34,9 +34,16 @@
                         </div>
                         
                         <div class="collapse navbar-collapse">
-                            <ul class="navbar navbar-nav">
-                                
-                            </ul>
+                            
+                            <?php
+                                wp_nav_menu(
+                                    array(
+                                          'theme_location' => 'primary',
+                                          'container' => 'ul',
+                                          'menu_class' => 'navbar navbar-nav navbar-right',
+                                          ));
+                            ?>
+                            
                         </div>
                     </div>
                 </nav>
