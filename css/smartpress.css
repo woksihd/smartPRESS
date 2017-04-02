@@ -248,7 +248,7 @@ footer section.subscribe
 }
 footer section.subscribe .content
 {
-    max-width: 586px;
+    width: 586px;
     margin: auto;
 }
 
@@ -300,4 +300,30 @@ footer input[type="Submit"]:focus
     color: #f4f6fe;
     background: #6783f4;
     border-color: #6783f4;
+}
+
+footer section.social
+{
+    min-height: 128px;
+}
+footer section.social .icons
+{
+    max-width: 586px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 24px;
+    margin-top: 32px;
+}
+footer section.social .icons a
+{
+    color: #f4f6fe;
+    opacity: 0.7;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+footer section.social .icons a:hover,
+footer section.social .icons a:focus
+{
+    color: #6783f4;
+    opacity: 1;
 }

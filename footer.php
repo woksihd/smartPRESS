@@ -28,8 +28,14 @@
                     </form>
                 </div>
             </section>
-            <section class="social">
-                
+            <section class="social text-center">
+                <div class="container">
+                    <div class="icons">
+                        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                    </div>
+                </div>
             </section>
         </footer>
     </body>
