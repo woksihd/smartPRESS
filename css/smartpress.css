@@ -75,6 +75,7 @@ a.navbar-brand
     background-attachment: fixed;
     background-repeat: no-repeat;
     color: #F4F6FE;
+    background-size: 100%;
 }
 .header-img .title
 {
@@ -243,6 +244,7 @@ footer section.subscribe
     1px 1px 0 rgba(117, 102, 68, .4);
     padding-top: 24px;
     padding-bottom: 24px;
+    background-size: 100%;
 }
 footer section.subscribe .content
 {
