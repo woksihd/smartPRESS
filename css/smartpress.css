@@ -221,3 +221,45 @@ a.cta-dark:focus
     color: #F4F6FE;
     background: #27292b;
 }
+
+/* stuff for footer */
+footer
+{
+    color: #f4f6fe;
+    background: #27292b;
+}
+footer section.subscribe
+{
+    min-height: 282px;
+    background: url(default-footer.jpg);
+    background-position: 15%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+footer input[type="Submit"]
+{
+    background: transparent;
+    color: #27292b;
+    border: 1px solid #27292b;
+    border-radius: 3px;
+    padding: 12px 17px;
+    text-transform: uppercase;
+    display: block;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    letter-spacing: .05em;
+    margin-top: 3px;
+    max-width: 12%;
+    opacity: 0.7;
+    text-align: center;
+}
+footer input[type="Submit"]:hover,
+footer input[type="Submit"]:focus
+{
+    text-decoration: none;
+    opacity: 1;
+    color: #f4f6fe;
+    background: #27292b;
+}
