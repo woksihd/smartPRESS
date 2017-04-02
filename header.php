@@ -11,7 +11,7 @@
         <head>
             <meta charset="UTF-8">
             <title><?php bloginfo( 'name' ); ?> - <?php the_title(); ?></title>
-            <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,500,700&amp;subset=latin-ext" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Droid+Sans:200,400,500&amp;subset=latin-ext" rel="stylesheet">
             <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=latin-ext" rel="stylesheet">
             <?php wp_head(); ?>
         </head>
@@ -40,7 +40,7 @@
                                     array(
                                           'theme_location' => 'primary',
                                           'container' => 'ul',
-                                          'menu_class' => 'navbar navbar-nav navbar-right',
+                                          'menu_class' => 'navbar navbar-nav navbar-right'
                                           ));
                             ?>
                             
