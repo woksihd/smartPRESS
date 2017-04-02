@@ -1,12 +1,52 @@
 /* CSS for smartPRESS.hu */
-
 body
 {
-    padding-top: 70px;
-    background: #fff;
+    background: #F4F6FE;
+    color: #333;
+    font-family: 'Droid Sans', sans-serif;
 }
 
+
+/* stuff for header & navbar */
 .navbar
 {
-    background: #c4c4c4;
+    background: #3258F3;
+    color: #F4F6FE;
 }
+.navbar .container-fluid
+{
+    padding-left: 64px;
+    padding-right: 64px;
+}
+.navbar a
+{
+    color: #F4F6FE;
+}
+.shadow-bar
+{
+    -moz-box-shadow: 0 4px 5px 0px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0 4px 5px 0px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 5px 0px rgba(0,0,0,0.2);
+}
+
+
+.header-img
+{
+    min-height: 320px;
+    background: url(default-bg.jpg);
+    background-position: top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #F4F6FE;
+}
+.header-img .title
+{
+    text-align: center;
+    margin-top: 10%;
+    text-shadow:
+        -1px -1px 0 rgba(255, 255, 255, .1),
+        1px -1px 0 rgba(118, 102, 69, .1),
+        -1px 1px 0 rgba(119, 104, 70, .1),
+        1px 1px 0 rgba(117, 102, 68, .4);   
+}
+
