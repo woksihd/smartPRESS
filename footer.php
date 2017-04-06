@@ -11,20 +11,23 @@
                 <div class="content text-center">
                     <h1>The road is ahead of you!</h1>
                     <p>Subscribe to our newsletter!</p>
-                    <script src="https://r3.minicrm.hu/api/minicrm.js?t=1490888498"></script>
-                    <form FormHash="29638-0kdjt9vdu61bc8x3m0l3" action="https://r3.minicrm.hu/Api/Signup" method="post" class="TurnKeyCRM">
-                        
+                    <script src="https://r3.minicrm.hu/api/minicrm.js?t=1491485179"></script>
+                    <form FormHash="29638-24b9velvnr2fqh484rqa" action="https://r3.minicrm.hu/Api/Signup" method="post" class="TurnKeyCRM">
+
                         <!-- hiddens -->
-                        <textarea class="hidden" name="ToDo[2167][Comment]" id="ToDo_Comment_2167" language="HU">FONTOS!</textarea>
-                        
+                        <textarea  class="hidden" name="ToDo[2261][Comment]" id="ToDo_Comment_2261" language="HU">
+                          Új feliratkozó érkezett az <?php the_title();?> oldalról! Vedd fel vele a kapcsolatot!
+                        </textarea>
+                        <textarea class="hidden" name="Project[2257][PageFilled]" id="Project_PageFilled_2257" language="HU"><?php the_permalink(); ?></textarea>
+
                         <!-- visible -->
-                        <input class="form-control" name="Contact[2165][Email]" id="Contact_Email_2165" language="HU" type="text" placeholder="Email..." />
-                        <input class="form-control" name="Contact[2165][FirstName]" id="Contact_FirstName_2165" language="HU" type="text" placeholder="Name..." />
-                        <input id="Submit_29638-0kdjt9vdu61bc8x3m0l3" type="Submit" value="Elküld">
-                        
+                        <input class="form-control" name="Contact[2259][Email]" id="Contact_Email_2259" language="HU" type="text" placeholder="Email..." />
+                        <input class="form-control" name="Contact[2259][FirstName]" id="Contact_FirstName_2259" language="HU" type="text" placeholder="Name..." />
+                        <input id="Submit_29638-24b9velvnr2fqh484rqa" type="Submit" value="Elküld">
+
                         <!-- form respone -->
-                        <div id="Response_29638-0kdjt9vdu61bc8x3m0l3" style="display: none;" class="Response"></div>
-                   
+                        <div id="Response_29638-24b9velvnr2fqh484rqa" style="display: none;" class="Response"></div>
+
                     </form>
                 </div>
             </section>
@@ -38,5 +41,18 @@
                 </div>
             </section>
         </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script>
+        $('.nav a').click(function (e) {
+            $(this).tab('show');
+            var tabContent = '#tabContent' + this.id;
+            $('#tabContent1').hide();
+            $('#tabContent2').hide();
+            $('#tabContent3').hide();
+            $(tabContent).show();
+          });
+        </script>
+
     </body>
 </html>
