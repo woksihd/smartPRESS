@@ -7,7 +7,7 @@
 
  function smartPRESS_enqueue()
 {
-    /*
+ /*
 	 * Init Scripts » ORDER MATTERS AF » last one has the highest priority!
 	 */ 
 	
@@ -23,7 +23,7 @@
 				wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js', array(), '3.1.1.', true);
     wp_enqueue_script('bootstrapjs', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', array('jquery'), '3.3.7.', false);
     // wp_enqueue_script('typehead__boostrap_js', get_template_directory_uri() . '/js/bootstrap3-typeahead.js', array('jquery'), '', true );
-				// wp_enqueue_script('customjs', get_template_directory_uri() . '/js/new-theme.js', array('jquery', 'jquery-ui-datepicker'), '1.0.0.', true);
+				wp_enqueue_script('customjs', get_template_directory_uri() . '/js/smartpress.js', array('jquery', 'jquery-ui-datepicker'), '1.0.0.', true);
     
  }
  add_action('wp_enqueue_scripts', 'smartPRESS_enqueue');
@@ -35,6 +35,14 @@
 	register_nav_menu('primary','Top navbar menu');
 }
 add_action('init','smartPRESS_setup1');
+
+function SearchFilter($query) {
+	if ($query->is_search) {
+		$query->set('post_type', 'post');
+	}
+	return $query;
+}
+add_filter('pre_get_posts','SearchFilter');
 
 function lorem()
 {

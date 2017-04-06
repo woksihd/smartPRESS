@@ -1,7 +1,7 @@
 <?php
 /*
-Template name: Index template
-Description: -
+Template name: Landing Pages
+Description: Template for landing pages
 */
 
     get_header();
@@ -15,15 +15,12 @@ Description: -
 
 <div class="container">
     <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-8 col-md-offset-2">
             <div class="post-content">
-                <h1>
-                    <?php the_title(); ?>
-                </h1>
-                <?php the_content(); ?>
+                Ide jön a landing page!
             </div>
         </div>
-    </div>    
+    </div>
 </div>
 
 <?php
